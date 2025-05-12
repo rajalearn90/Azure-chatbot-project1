@@ -17,7 +17,7 @@ from langchain_community.retrievers import AzureAISearchRetriever
 # This retrieves relevant documents based on the user query from the Azure Search index
 retriever = AzureAISearchRetriever(
     service_name="azurelibaisearch",  # Ensure this matches your service name
-    api_key="jw9JJE10sXTX0Wfq9NVJID4YlrcB0JUDstQQhcPcuIAzSeAPzTkI",  # Ensure this is a valid API key
+    api_key="",  # Ensure this is a valid API key
     index_name="azuretable-indexer",  # Ensure this matches your index name
     content_key="Answer",  # Ensure this matches the field in your index
     top_k=3
@@ -38,7 +38,7 @@ Question: {question}"""
 llm = AzureChatOpenAI(
     api_version="2025-01-01-preview",  # Specify the API version to use
     azure_endpoint="https://rajaa-makza3il-eastus2.openai.azure.com/" ,
-    api_key="1YC5Scone8J6XO4E3ZMOB1Zx3DQ8C4Mjg7LCOXrLMCEnD7QqvMZYJQQJ99BEACHYHv6XJ3w3AAAAACOGXMlI", # Fetch the API key for Azure OpenAI from environment variables
+    api_key="", # Fetch the API key for Azure OpenAI from environment variables
     model="gpt-4o" # Specify the model to use
 )
 

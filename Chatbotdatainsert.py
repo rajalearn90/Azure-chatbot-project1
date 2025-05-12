@@ -4,7 +4,7 @@ import csv
 from azure.data.tables import TableServiceClient, TableEntity
 
 # Set up your Azure Table Storage connection
-connection_string ="DefaultEndpointsProtocol=https;AccountName=aimodelstorageproj1;AccountKey=6XVQztdZbxBemxCp/Hl/ry//VWxeIZQhFNMM2WwmMfgdolsaZrbMPJts+Z6vg+Pn3vSK0YOGKi0o+ASt7boBAA==;EndpointSuffix=core.windows.net"
+connection_string ="" # storage account connection string
 table_name = "AzureChatQA"
 
 # Create a TableServiceClient
